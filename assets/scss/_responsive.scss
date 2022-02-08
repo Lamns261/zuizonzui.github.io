@@ -1,0 +1,96 @@
+// /* RESPONSIVE TABLET */
+// @media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+
+// }
+
+/* RESPONSIVE TABLET - MOBILE */
+@media screen and (max-width: 63.9375em) {
+    .buy-ticket-btn {
+        width: 100%;
+    }
+    
+    .form-send input {
+        width: 100%;
+    }
+
+    #footer {
+        p a {
+            padding: 16px 0;
+            display: inline-block;
+        }
+
+        .footer-icon {
+            font-size: 30px;
+            padding: 8px;
+        }
+    }
+}
+
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 46.1875em) {
+    #header {
+        overflow: hidden;
+
+        .search-btn {
+            display: none;
+        }
+
+        .menu-btn {
+            display: block;
+
+            i {
+                font-size: 1.2rem;
+            }
+        }
+
+        #nav {
+            display: block;
+        
+            & > li {
+                display: block;
+            }
+
+            .subnav {
+                position: initial;
+                background-color: #000;
+    
+                li a {
+                    color: #fff;
+                    padding: 0 40px;
+                }
+            }
+
+            & > li:first-child {
+                display: inline-block;
+            }
+        }
+    }
+
+    #slider .slider-content h2 {
+        text-shadow: 0 0 3px #000;
+    }
+
+    #contact .contact-body .contact-form {
+        margin-top: 16px;
+    }
+
+    #modal .modal-container {
+        transform: translateY(0);
+        animation: modalFadeIn ease 0.5s;
+    }
+
+    #modal .modal-container .modal-body .modal-input {
+        padding: 15px 8px;
+    }
+
+    @keyframes modalFadeIn {
+        from {
+          transform: translateY(-200px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+    } 
+}

@@ -1,0 +1,66 @@
+
+// color
+$black-color: #000000;
+$white-color: #ffffff;
+$bc-white: #ffffff;
+$bc-black: #000;
+
+// text
+$text-font: 1.5rem;
+
+// width, height
+$header-height: 4.6rem;
+
+// mixin
+@mixin text-link {
+    text-decoration: none;
+    color: $white-color;
+}
+
+@mixin hoverBtn {
+    background-color: #ccc;
+    color: $black-color;
+    cursor: pointer;
+}
+
+@mixin clearFix {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+@mixin absoluteCenter($direction: "left") {
+    position: absolute;
+
+    @if $direction == "left" {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @if $direction == "top" {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    @if $direction == "both" {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}   
+
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}

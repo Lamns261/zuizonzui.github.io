@@ -1,0 +1,100 @@
+#header {
+    background-color: $bc-black;
+    height: $header-height;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+    #nav {
+        font-size: $text-font;
+        display: inline-block;
+        
+        & > li {
+            display: inline-block;
+        }
+
+        li {
+        list-style: none;
+        line-height: $header-height;
+        position: relative;
+            a {
+                @include text-link;
+                display: block;
+                text-transform: uppercase;
+                padding: 0 24px;
+            }
+
+            .nav-arrow-down {
+                position: relative;
+                top: 0;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-color: #ccc;
+            }
+
+            &:hover a {
+                color: $black-color;
+            }
+
+            &:hover .subnav {
+                display: block;
+            }
+        }
+    }
+    
+    .search-btn {
+        color: $white-color;
+        padding: 0 24px;
+        font-size: $text-font;
+        line-height: $header-height;
+        float: right;
+        
+        &:hover {
+            cursor: pointer;
+            background-color: #f44336;
+        }
+        
+        i {
+            font-weight: 600; 
+        }
+    }
+}
+
+#header #nav .subnav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: $bc-white;
+    min-width: 160px;
+    box-shadow: 0 0 10px #888;
+    display: none;
+
+    li {
+        padding: 0;
+
+        a {
+            color: $black-color;
+            padding: 0px 16px;
+            text-transform: none;
+        }
+    }
+}
+
+.menu-btn {
+    float: right;
+    padding: 17px 24px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+
+    &:hover {
+        background-color: #f44336;
+        cursor: pointer;
+    }
+}

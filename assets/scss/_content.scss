@@ -1,0 +1,198 @@
+#content {
+    font-size: $text-font;
+
+    .container {
+        width: 800px;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .padding {
+        padding: 64px 16px;
+    }
+
+    .content-title {
+        font-size: 3rem;
+        margin-top: 10px;
+        font-weight: 400;
+        letter-spacing: 3px;
+    }
+
+    .content-sub-title {
+        font-style: italic;
+        color: #888;
+        margin-top: 15px;
+    }
+
+    .tour-background {
+        background-color: $bc-black;
+    }
+    
+}
+
+
+#band {
+    .content-text {
+        margin-top: 15px;
+        line-height: 2.25rem;
+        text-align: justify;
+    }
+    
+    .band-member {
+        padding: 47px 0 32px;
+        
+        p {
+            margin: 15px 0;
+        }
+
+        img {
+            width: 60%;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+#tour {
+    color: $white-color;
+    
+    .tour-schedule {
+        background-color: $bc-white;
+        color: $black-color;
+        text-align: left;
+        
+        .schedule-inf {
+            margin-top: 30px;
+            list-style: none;
+            
+            li {
+                padding: 10px 16px;
+                border-bottom: 1px solid #ccc;
+                color: #888;
+            }
+            
+            .sold-out {
+                margin-left: 16px;
+                padding: 3px 8px;
+                background-color: #f44336;
+                color: $white-color;
+            }
+
+            .quanlity {
+                float: right;
+                background-color: $bc-black;
+                color: $white-color;
+                margin-right: 16px;
+                padding: 2px 8px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .tour-ticket {
+        padding: 32px 0;
+
+        .ticket-inf {
+            padding: 0 8px;
+            margin-bottom: 16px;
+            
+            img {
+                width: 100%;
+
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+
+            & > div {
+                background-color: $bc-white;
+                color: $black-color;
+                padding: 16px;
+                text-align: left;
+
+                .ticket-where {
+                    font-weight: 700;
+                }
+
+                .ticket-time {
+                    margin-top: 15px;
+                    color: #888;
+                }
+
+                .ticket-content {
+                    margin-top: 15px;
+
+                }
+
+                .buy-ticket-btn {
+                    background-color: $bc-black;
+                    color: $white-color;
+                    padding: 13px 18px;
+                    margin-top: 15px;
+                    border: none;
+
+                    &:hover {
+                        @include hoverBtn;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#contact {
+    .contact-body {
+        margin: 47px 0 48px;
+        text-align: left;
+
+        .contact-inf {
+            line-height: 2.5rem;
+            font-size: 1.8rem;
+
+            .contact-icon {
+                text-align: center;
+                padding-right: 14px;
+            }
+
+            a {
+                color: #0083f5f5;
+                opacity: 0.8;
+            }
+        }
+
+        .contact-form {
+            
+            .form-control {
+                line-height: 2.5rem;
+                padding: 10px;
+                width: 100%;
+                border: 1px solid #ccc;
+            }
+
+            .form-mess {
+                margin-top: 8px;
+            }
+
+            .form-send::after {
+                @include clearFix;
+            }
+
+            .form-send input {
+                float: right;
+                background-color: $bc-black;
+                padding: 14px 16px;
+                color: $white-color;
+                margin-top: 16px;
+                border: none;
+
+                &:hover {
+                    @include hoverBtn;
+                }
+            }
+        }
+    }
+}
+
+#content .map img {
+    width: 100%;
+}

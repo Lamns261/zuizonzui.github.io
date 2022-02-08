@@ -1,0 +1,27 @@
+#slider {
+    margin-top: $header-height;
+    background: url(../slider/slider1.jpg) top center / cover no-repeat;
+    padding-top: 50%;
+    position: relative;
+
+    .slider-content {
+        @include absoluteCenter("left");
+        bottom: 47px;
+        text-align: center;
+        color: $white-color;
+        font-size: $text-font;
+
+        h2 {
+            font-weight: 100;
+            font-size: 2.4rem;
+            text-shadow: 0 0 1px $white-color;
+        }
+
+        p {
+            margin-top: 15px;
+            font-weight: bolder;
+            letter-spacing: 0.5px;
+            text-shadow: 0 0 1px $white-color; 
+        }
+    }
+}
